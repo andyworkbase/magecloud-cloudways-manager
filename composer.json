@@ -1,6 +1,6 @@
 {
   "name": "andyworkbase/magecloud-cloudways-manager",
-  "description": "Cloudways Manager",
+  "description": "Cloudways service manager",
   "version": "1.0.0",
   "license": "MIT",
   "require": {
