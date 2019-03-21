@@ -1,7 +1,7 @@
 {
   "name": "andyworkbase/magecloud-cloudways-manager",
   "description": "Cloudways service manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "require": {
     "php": "~5.6.0|~7.0.0|~7.1.0|~7.2.0",
