@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author andy
+ * @email andyworkbase@gmail.com
+ * @team MageCloud
+ * @package MageCloud_CloudwaysManager
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="magecloud_cloudways_manager_service_state" xsi:type="object">MageCloud\CloudwaysManager\Console\Command\Service\State</item>
+                <item name="magecloud_cloudways_manager_varnish_enable" xsi:type="object">MageCloud\CloudwaysManager\Console\Command\Varnish\Enable</item>
+                <item name="magecloud_cloudways_manager_varnish_disable" xsi:type="object">MageCloud\CloudwaysManager\Console\Command\Varnish\Disable</item>
+                <item name="magecloud_cloudways_manager_varnish_purge" xsi:type="object">MageCloud\CloudwaysManager\Console\Command\Varnish\Purge</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

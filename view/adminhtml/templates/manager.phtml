@@ -1,0 +1,17 @@
+<?php
+
+// @codingStandardsIgnoreFile
+
+/** @var \MageCloud\CloudwaysManager\Block\Adminhtml\Manager $block */
+?>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "cloudwaysManager": {
+                "url": <?= /* @escapeNotVerified */ $block->getUrlJsonConfig() ?>,
+                "formKey": "<?= /* @escapeNotVerified */ $block->getFormKey() ?>"
+            }
+        }
+    }
+</script>

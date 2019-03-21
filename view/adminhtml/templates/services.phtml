@@ -1,0 +1,29 @@
+<?php
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<?php
+    $list = $block->getData('services_list');
+?>
+<?php if (!empty($list)): ?>
+<div class="admin__data-grid-wrap admin__data-grid-wrap-static">
+    <table id="cloudways_services_grid_table" class="data-grid">
+        <thead>
+            <tr>
+                <th class="data-grid-th"><span><?php echo __('Service') ?></span></th>
+                <th class="data-grid-th"><span><?php echo __('Status') ?></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($list as $key => $data): ?>
+                <tr data-role="row" class="<?php echo $key % 2 == 0 ? 'even' : ''; ?>">
+                    <td><span><?php echo $data['code'] ?></span></td>
+                    <td><span class="<?php echo $data['decorator_class']?>"><span><?php echo $data['status'] ?></span></span></td>
+                </tr>
+            <?php endforeach;?>
+        </tbody>
+    </table>
+</div>
+<?php endif; ?>
