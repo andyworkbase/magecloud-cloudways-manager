@@ -1,5 +1,5 @@
 {
-  "name": "magecloud/module-cloudways-manager",
+  "name": "andyworkbase/magecloud-cloudways-manager",
   "description": "Cloudways Manager",
   "version": "1.0.0",
   "license": "MIT",
@@ -9,18 +9,12 @@
     "magento/module-page-cache": "100.1.*"
   },
   "type": "magento2-module",
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git@github.com:andyworkbase/magecloud-cloudways-manager.git"
-    }
-  ],
   "autoload": {
     "files": [
       "registration.php"
     ],
     "psr-4": {
-      "Magecloud\\CloudwaysManager\\": ""
+      "MageCloud\\CloudwaysManager\\": ""
     }
   }
 }
