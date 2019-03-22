@@ -1,5 +1,16 @@
 <h1>Cloudways service manager</h1>
 
+<h2>Installation:</h2>
+<strong>Composer:</strong> <br/>
+composer require andyworkbase/magecloud-cloudways-manager <br/>
+composer update <br/>
+
+<strong>Manually:</strong> <br/>
+1) unpack extension package and upload them into Magento root directory/app/code/
+2) php bin/magento setup:upgrade
+3) php bin/magento setup:di:compile
+4) php bin/magento setup:static-content:deploy
+
 <strong>Manager</strong> - System -> Cache Management -> Cloudways Manager
 
 <strong>Configuration</strong> - Stores -> Configuration -> MageCloud -> Cloudways Manager
